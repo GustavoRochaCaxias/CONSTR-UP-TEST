@@ -12,7 +12,7 @@ class ProductController extends Controller
         return response() ->json(Product::all());
     }
 
-    public function sotre(Request $request)
+    public function store(Request $request)
     {
         $validated = $request-> validate([
             'nome' => 'required|string|max:255',
